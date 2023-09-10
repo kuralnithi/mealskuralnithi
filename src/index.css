@@ -1,0 +1,66 @@
+.enterfood{
+    display: none;
+    z-index: 1;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.mainbox {
+    position: relative;
+    background: url(./meal-bg/meal2.jpg);
+    background-size: cover;
+    backdrop-filter: blur(100px);
+}
+
+.mainbox::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+}
+
+.headtxt {
+    margin-top: 3%;
+    font-family: cursive;
+    color: white;
+    background-color: dimgray;
+    border: 10px groove grey;
+    border-radius: 18%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.searchbar {
+    width: 300px
+}
+
+.mealc {
+
+    width: 70%;
+    padding: 2%;
+    min-height: 100vh;
+
+}
+
+.cardbox:hover {
+    border: 3px solid lightblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.1s ease;
+}
+
+.cardbox {
+    background-color: whitesmoke;
+    height: 100%;
+}
+
+.cardboxtxt {
+    height: 100%;
+    width: 100%;
+
+
+    text-overflow: ellipsis;
+    white-space: wrap;
+}
