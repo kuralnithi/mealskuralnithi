@@ -1,4 +1,4 @@
-import Meals from '../../Meals'
+import Meals from './Meals'
 
 function App() {
 
